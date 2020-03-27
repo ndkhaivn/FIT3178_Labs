@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RgW-tK-sbx">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GoT Name Creator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FIT3178_Lab02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-tL-EZ8">
+                                <rect key="frame" x="16" y="60" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nWT-aB-NNf">
+                                <rect key="frame" x="16" y="89" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPl-AT-Gl8">
+                                <rect key="frame" x="16" y="607" width="343" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iwc-i7-vpf"/>
+                                </constraints>
+                                <state key="normal" title="Generate House Details">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iVD-xy-Ecw" kind="show" identifier="createHouseSegue" id="7Xr-Fd-wPT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeM-IG-bLC">
+                                <rect key="frame" x="16" y="131" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xry-ov-A4T">
+                                <rect key="frame" x="16" y="160" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-96-F43">
+                                <rect key="frame" x="16" y="202" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ooD-7S-qCl">
+                                <rect key="frame" x="16" y="231" width="343" height="32"/>
+                                <segments>
+                                    <segment title="Lannister"/>
+                                    <segment title="Tully"/>
+                                    <segment title="Tyrell"/>
+                                    <segment title="Stark"/>
+                                    <segment title="Baratheon"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DeM-IG-bLC" firstAttribute="top" secondItem="nWT-aB-NNf" secondAttribute="bottom" constant="8" id="1hz-oA-LFw"/>
+                            <constraint firstItem="ooD-7S-qCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9KI-sJ-LDu"/>
+                            <constraint firstItem="nWT-aB-NNf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AXY-A1-554"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeM-IG-bLC" secondAttribute="trailing" constant="16" id="JOA-Y6-26p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xry-ov-A4T" secondAttribute="trailing" constant="16" id="KAC-Lr-S7Q"/>
+                            <constraint firstItem="t0u-96-F43" firstAttribute="top" secondItem="Xry-ov-A4T" secondAttribute="bottom" constant="8" id="MzK-rd-hQo"/>
+                            <constraint firstItem="t0u-96-F43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Npx-W6-k5R"/>
+                            <constraint firstItem="oPl-AT-Gl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q6k-bP-NFA"/>
+                            <constraint firstItem="ooD-7S-qCl" firstAttribute="top" secondItem="t0u-96-F43" secondAttribute="bottom" constant="8" id="Svl-1l-cY1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nWT-aB-NNf" secondAttribute="trailing" constant="16" id="UBI-Cc-IZg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oPl-AT-Gl8" secondAttribute="trailing" constant="16" id="UIe-8D-W3j"/>
+                            <constraint firstItem="Xry-ov-A4T" firstAttribute="top" secondItem="DeM-IG-bLC" secondAttribute="bottom" constant="8" id="WR6-4s-lH4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oPl-AT-Gl8" secondAttribute="bottom" constant="16" id="Zt2-V5-skN"/>
+                            <constraint firstItem="nWT-aB-NNf" firstAttribute="top" secondItem="Tde-tL-EZ8" secondAttribute="bottom" constant="8" id="atv-RA-0za"/>
+                            <constraint firstItem="DeM-IG-bLC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gbX-VV-NJf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t0u-96-F43" secondAttribute="trailing" constant="16" id="l4A-52-tcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tde-tL-EZ8" secondAttribute="trailing" constant="16" id="lfK-zY-eQ3"/>
+                            <constraint firstItem="Tde-tL-EZ8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="oaB-qt-xBE"/>
+                            <constraint firstItem="Tde-tL-EZ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="omm-3q-FhR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ooD-7S-qCl" secondAttribute="trailing" constant="16" id="qsD-dA-Lre"/>
+                            <constraint firstItem="Xry-ov-A4T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zmZ-Mx-PcS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GoT Name Creator" id="XmY-Tr-hnN"/>
+                    <connections>
+                        <outlet property="ageField" destination="Xry-ov-A4T" id="hkK-Eh-Zrk"/>
+                        <outlet property="houseSegmentedControl" destination="ooD-7S-qCl" id="Hj4-wm-CtN"/>
+                        <outlet property="nameField" destination="nWT-aB-NNf" id="jN4-EN-eEc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GA3-gs-Zr7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RgW-tK-sbx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P21-ft-iFo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="576-RC-Mx0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeX-Kz-puf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--House Details-->
+        <scene sceneID="9WZ-LZ-vA6">
+            <objects>
+                <viewController id="iVD-xy-Ecw" customClass="HouseViewController" customModule="FIT3178_Lab02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vza-g5-1Lb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-N7-Z3Q">
+                                <rect key="frame" x="16" y="60" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: 28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb4-Dz-uuJ">
+                                <rect key="frame" x="16" y="105" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House: Tyrell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBL-wM-ftA">
+                                <rect key="frame" x="16" y="142" width="343" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ena-N7-Z3Q" firstAttribute="leading" secondItem="YqA-MG-VEd" secondAttribute="leading" constant="16" id="FJb-zP-D7b"/>
+                            <constraint firstItem="YqA-MG-VEd" firstAttribute="trailing" secondItem="MBL-wM-ftA" secondAttribute="trailing" constant="16" id="Ufg-qo-km2"/>
+                            <constraint firstItem="fb4-Dz-uuJ" firstAttribute="top" secondItem="Ena-N7-Z3Q" secondAttribute="bottom" constant="16" id="ZPF-zq-LNo"/>
+                            <constraint firstItem="MBL-wM-ftA" firstAttribute="leading" secondItem="YqA-MG-VEd" secondAttribute="leading" constant="16" id="dPm-XP-yac"/>
+                            <constraint firstItem="MBL-wM-ftA" firstAttribute="top" secondItem="fb4-Dz-uuJ" secondAttribute="bottom" constant="16" id="gVC-WW-y3K"/>
+                            <constraint firstItem="YqA-MG-VEd" firstAttribute="trailing" secondItem="Ena-N7-Z3Q" secondAttribute="trailing" constant="16" id="hSa-qi-AoF"/>
+                            <constraint firstItem="fb4-Dz-uuJ" firstAttribute="leading" secondItem="YqA-MG-VEd" secondAttribute="leading" constant="16" id="mzz-gS-I0H"/>
+                            <constraint firstItem="YqA-MG-VEd" firstAttribute="trailing" secondItem="fb4-Dz-uuJ" secondAttribute="trailing" constant="16" id="x5n-7n-UKK"/>
+                            <constraint firstItem="Ena-N7-Z3Q" firstAttribute="top" secondItem="YqA-MG-VEd" secondAttribute="top" constant="16" id="yHi-vc-oFg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YqA-MG-VEd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="House Details" id="ALo-qj-fdc"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="fb4-Dz-uuJ" id="Gel-ba-nvl"/>
+                        <outlet property="houseLabel" destination="MBL-wM-ftA" id="H5k-L8-gKf"/>
+                        <outlet property="nameLabel" destination="Ena-N7-Z3Q" id="2kC-sH-oAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLx-0u-Jfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="137"/>
+        </scene>
+    </scenes>
+</document>
