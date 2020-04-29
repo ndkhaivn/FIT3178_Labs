@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SuperHero" representedClassName="SuperHero" syncable="YES">
+        <attribute name="abilities" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="heroes" inverseEntity="Team"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SuperHero" inverseName="teams" inverseEntity="SuperHero"/>
+    </entity>
+    <elements>
+        <element name="SuperHero" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Team" positionX="-54" positionY="9" width="128" height="73"/>
+    </elements>
+</model>
