@@ -71,6 +71,7 @@ class AllHeroesTableViewController: UITableViewController, DatabaseListener, UIS
     func onHeroListChange(change: DatabaseChange, heroes: [SuperHero]) {
         allHeroes = heroes
         updateSearchResults(for: navigationItem.searchController!)
+        print(allHeroes)
     }
     
     func onTeamChange(change: DatabaseChange, teamHeroes: [SuperHero]) {

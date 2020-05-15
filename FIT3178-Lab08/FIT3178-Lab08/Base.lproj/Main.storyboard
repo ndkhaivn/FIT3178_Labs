@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FIT3178_Lab08" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile0" id="BdJ-gw-9KH">
+                                <rect key="frame" x="127" y="368" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="C3G-Ol-PpH" appends="YES" id="ZIB-o3-Rpn"/>
+                            <outletCollection property="gestureRecognizers" destination="dBe-5I-2ml" appends="YES" id="EjY-XW-uuY"/>
+                            <outletCollection property="gestureRecognizers" destination="ooY-LB-jge" appends="YES" id="jVB-ZW-lni"/>
+                            <outletCollection property="gestureRecognizers" destination="5Av-c8-Z5h" appends="YES" id="uir-KF-g5m"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BdJ-gw-9KH" id="93Y-fl-30s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="C3G-Ol-PpH" userLabel="Double-tap Gesture Recognizer">
+                    <connections>
+                        <action selector="handleDoulbeTapWithRecognizer:" destination="BYZ-38-t0r" id="9GR-Cn-Gx5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="dBe-5I-2ml" userLabel="Right Swipe">
+                    <connections>
+                        <action selector="handleSwipeWithRecognizer:" destination="BYZ-38-t0r" id="KKf-xg-sPA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ooY-LB-jge" userLabel="Left Swift">
+                    <connections>
+                        <action selector="handleSwipeWithRecognizer:" destination="BYZ-38-t0r" id="rRJ-qd-96X"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="5Av-c8-Z5h">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="BYZ-38-t0r" id="h4W-Vz-VOA"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile0" width="1024" height="1024"/>
+    </resources>
+</document>
