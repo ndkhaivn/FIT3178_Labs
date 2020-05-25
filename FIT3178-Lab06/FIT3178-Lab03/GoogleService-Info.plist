@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>491481737247-qisrsohltu0o4e5acr2kd6cp0oaf7bso.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491481737247-qisrsohltu0o4e5acr2kd6cp0oaf7bso</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZA898PUPvww9WvMSs8VxKh80cM_ed18Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491481737247</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>monash.FIT3178-Lab03</string>
+	<key>PROJECT_ID</key>
+	<string>fit3178-lab06</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fit3178-lab06.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491481737247:ios:1f67ded1e210a2727fcd2a</string>
+	<key>DATABASE_URL</key>
+	<string>https://fit3178-lab06.firebaseio.com</string>
+</dict>
+</plist>
